@@ -1,0 +1,23 @@
+#TabelaSimbola
+SEG 1 .data 1 0x0 0x8 L
+SYM 2 r 1 0x0 L
+SEG 3 .text 3 0x0 0x20 L
+SYM 4 i 3 0x18 L
+SYM 5 o 0 0x0 G
+
+#rel.data
+0x0 A 1
+
+.data
+00 00 00 00 00 00 00 00 
+
+#rel.text
+0x14 A 1
+0x1c A 5
+
+.text
+10 80 30 00 03 00 00 00 21 00 00 00 35 00 01 80 
+02 c0 00 00 00 00 00 00 10 c0 00 00 00 00 00 00 
+
+
+#end

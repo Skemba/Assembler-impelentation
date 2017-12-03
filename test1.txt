@@ -1,0 +1,12 @@
+.data
+a: DW a
+b: DD a+2
+.text
+LOAD R2, #b+5
+t: JZ R1, [R2] ; komentar
+PUSH R2
+LOAD R3, $t
+NOT R2, R15
+ADD R4, SP, PC
+STORE R2, t
+.end

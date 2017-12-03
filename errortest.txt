@@ -1,0 +1,5 @@
+.txt
+LOAD r0, a
+SUB R0, R1, R1
+JMP b
+.end

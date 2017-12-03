@@ -1,0 +1,12 @@
+.global k, t
+ORG 0x20
+.text.1
+LOAD R0, #4+2
+LOAD R1, [R0+5]
+k: XOR R2, R1, R0
+MUL R2, R2, R0
+JNZ R2, k
+.text.2
+LOAD R5, t
+STORE R5, [R1]
+.end

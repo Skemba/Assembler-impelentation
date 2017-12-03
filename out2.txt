@@ -1,0 +1,21 @@
+#TabelaSimbola
+SEG 1 .text.1 1 0x20 0x20 L
+SYM 2 k 1 0x30 G
+SEG 3 .text.2 3 0x0 0xc L
+SYM 4 t 0 0x0 G
+
+#rel.text.1
+0x3c A 2
+
+.text.1
+10 80 00 00 06 00 00 00 10 e0 08 00 05 00 00 00 
+37 02 08 00 32 02 10 00 05 c0 10 00 00 00 00 00 
+
+
+#rel.text.2
+0x4 A 4
+
+.text.2
+10 c0 28 00 00 00 00 00 11 41 28 00 
+
+#end

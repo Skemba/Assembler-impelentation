@@ -1,0 +1,35 @@
+.data.1
+.global k, sd,a, r
+a: DD t
+DB 3*2
+DW 2*sd
+pera DEF x-a
+ORG 0x20
+.text
+LOAD R1, k +2*6   ; ucitava sadrzaj memorijske lokacije a u registar R1, 8B
+LOAD R2, #a+ 5 ; ucitava adresu lokacije a u registar R2, 8B
+JZ R1, [R1] ; 4B
+PUSH R14 ; 4B
+LOAD R3, $t ; 8B
+NOT R2, R15 ; 4B
+k: 
+JGEZ R2,[R15] ; 4B
+t: JMP [R3] ; 4B
+JLZ R4, x ; 8B
+.text.1
+LOAD R5, #333 ; 8B
+CALL k ; 8B
+INT SP ; 4B
+XOR R1, SP, R3 ; 4B
+ADD PC,SP, R4 ; 4B
+LOAD R3, a ; ucitava sadrzaj lokacije a u registar R3 koristeci PC relativno adresiranje, 8B
+LOADSW SP, R2 ; 4B
+RET ; 4B
+SUB PC, R15,R3 ; 4B
+x: JZ R0, a  ; apsolutni skok na lokaciju x, 8B
+JZ R0, x ; PC relativni skok na lokaciju x, 8B
+yasfd: STORE R2, a ; asfa, 8B
+.end
+Does not parse
+RET ;
+SUB PC. R15, R3 ;

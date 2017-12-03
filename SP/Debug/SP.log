@@ -1,0 +1,13 @@
+﻿  LineProcessor.cpp
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(417): warning C4018: '<': signed/unsigned mismatch
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(448): warning C4018: '<': signed/unsigned mismatch
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(644): warning C4018: '<': signed/unsigned mismatch
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(878): warning C4018: '<': signed/unsigned mismatch
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(746): warning C4101: 'immValue': unreferenced local variable
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(1087): warning C4018: '<': signed/unsigned mismatch
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(1116): warning C4018: '<': signed/unsigned mismatch
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(1146): warning C4018: '<': signed/unsigned mismatch
+c:\users\aleksa\desktop\etf nepolozeno\sp\sp\lineprocessor.cpp(1353): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  SP.vcxproj -> C:\Users\Aleksa\Desktop\ETF nepolozeno\SP\Debug\SP.exe
+  SP.vcxproj -> C:\Users\Aleksa\Desktop\ETF nepolozeno\SP\Debug\SP.pdb (Full PDB)

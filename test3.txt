@@ -1,0 +1,11 @@
+.data
+.global o
+r: DD 2 DUP r
+.text
+LOAD R6, #3
+POP R0
+AND R0, R0, R6
+JMP r
+i: 
+LOAD R0, o
+.end 
